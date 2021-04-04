@@ -2,8 +2,8 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "page.notes">
 <!ENTITY author    "Andrew Zawadzki">
-<!ENTITY version   "2021.04.03c">
-<!ENTITY md5       "274934f34e9ba8c36f67dc38fdb451e5">
+<!ENTITY version   "2021.04.04">
+<!ENTITY md5       "f25f8c88b779fc5b3880ad19255f3f35">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "Squidly271/page.notes">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/main/plugins/&name;.plg">
@@ -12,6 +12,9 @@
 <PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" icon="edit">
 
 <CHANGES>
+###2021.04.04
+- Identify server on the popup page
+
 ###2021.04.03
 - Initial release
 

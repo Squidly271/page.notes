@@ -20,7 +20,7 @@ $vars = parse_ini_file("/var/local/emhttp/var.ini");
 <script src='/plugins/dynamix/javascript/dynamix.js'></script>
 <body>
 
-<h2><center>User Notes For Unraid Page <em>"<?=$_GET['page']?>"</em></center></h2>
+<h2><center>User Notes For <?=$vars['NAME']?> Page <em>"<?=$_GET['page']?>"</em></center></h2>
 <textarea id='UnraidNotes' rows=20 cols=65 placeholder='Enter Notes Here' oninput='$("#saveButton").prop("disabled",false);'></textarea>
 <center>
 <input id='saveButton' type='button' value='SAVE' disabled onclick='saveChanges();'></input>
