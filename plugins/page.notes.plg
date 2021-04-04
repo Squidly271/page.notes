@@ -2,14 +2,14 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "page.notes">
 <!ENTITY author    "Andrew Zawadzki">
-<!ENTITY version   "2021.04.03">
+<!ENTITY version   "2021.04.03a">
 <!ENTITY md5       "035e85a48bf30d9fa8b4156d4366da2d">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "Squidly271/page.notes">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/main/plugins/&name;.plg">
 ]>
 
-<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" icon="edit" support="https://forums.unraid.net/topic/104822-plugin-gui-search/">
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" icon="edit">
 
 <CHANGES>
 ###2021.04.03
