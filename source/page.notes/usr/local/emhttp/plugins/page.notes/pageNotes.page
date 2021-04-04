@@ -20,7 +20,7 @@ $fileExists = is_file("/boot/config/plugins/page.notes/pages/$currentUnraidPage"
 $(function() {
 	caPluginUpdateCheck("page.notes.plg",{
 			name:"User Notes (Page Notes)"
-	});
+	});	
 	$("i.fa.fa-edit.system").css("font-size","1.7rem");
 
 <? if ( $fileExists ):?>
@@ -28,11 +28,11 @@ $(function() {
 		$("i.fa.fa-edit.system").toggleClass("pageNotes");
 	},750);
 <?endif;?>
-
+		
 });
 
 function pageNotes() {
-	var MyWindow = popupWindow("/plugins/page.notes/pageNotes.php?page=<?=$currentUnraidPage?>","Unraid Notes",500,500);
+	var MyWindow = popupWindow("/pageNotes.php?page=<?=$currentUnraidPage?>","Unraid Notes",500,500);
 	MyWindow.focus();
 }
 

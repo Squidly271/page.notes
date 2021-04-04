@@ -12,8 +12,9 @@ switch ($_POST['action']) {
 	case "write":
 		if ( ! trim($_POST['notes']) )
 			@unlink("/boot/config/plugins/page.notes/pages/{$_POST['file']}");
-		else
+		else 
 			file_put_contents("/boot/config/plugins/page.notes/pages/{$_POST['file']}",$_POST['notes']);
 		break;
+
 }
 ?>
