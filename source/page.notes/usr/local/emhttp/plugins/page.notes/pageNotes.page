@@ -1,0 +1,44 @@
+Menu="Buttons"
+Title="User Notes"
+Icon="edit"
+Code="f044"
+---
+<?
+###################################
+#     Page Notes (User Notes)     #
+# Copyright 2021, Andrew Zawadzki #
+###################################
+$URI = str_replace("?","/",$_SERVER['REQUEST_URI']);
+
+$currentUnraidPage = basename($URI);
+$fileExists = is_file("/boot/config/plugins/page.notes/pages/$currentUnraidPage");
+?>
+<style>
+.pageNotes{color:red;}
+</style>
+<script>
+$(function() {
+	caPluginUpdateCheck("page.notes.plg",{
+			name:"User Notes (Page Notes)"
+	});	
+	$("i.fa.fa-edit.system").css("font-size","1.7rem");
+
+<? if ( $fileExists ):?>
+	setInterval(function() {
+		$("i.fa.fa-edit.system").toggleClass("pageNotes");
+	},750);
+<?endif;?>
+		
+});
+
+function pageNotes() {
+	var MyWindow = popupWindow("/pageNotes.php?page=<?=$currentUnraidPage?>","Unraid Notes",500,500);
+	MyWindow.focus();
+}
+
+function popupWindow(url, windowName, w, h) {
+	var y = window.outerHeight / 2 + window.screenY - ( h / 2);
+	var x = window.outerWidth / 2 + window.screenX - ( w / 2);
+	return window.open(url, windowName, `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=${w}, height=${h}, top=${y}, left=${x}`);
+}
+</script>
