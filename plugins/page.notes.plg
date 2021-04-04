@@ -2,8 +2,8 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "page.notes">
 <!ENTITY author    "Andrew Zawadzki">
-<!ENTITY version   "2021.04.03">
-<!ENTITY md5       "035e85a48bf30d9fa8b4156d4366da2d">
+<!ENTITY version   "2021.04.03a">
+<!ENTITY md5       "dd91f0aeb60762f64b608254bf482b40">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "Squidly271/page.notes">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/main/plugins/&name;.plg">
@@ -37,7 +37,6 @@ The 'post-install' script
 -->
 <FILE Run="/bin/bash">
 <INLINE>
-ln -s /usr/local/emhttp/plugins/page.notes/pageNotes.php /usr/local/emhttp/pageNotes.php > /dev/null 2> /dev/null
 echo ""
 echo "----------------------------------------------------"
 echo " &name; has been installed."
@@ -55,7 +54,6 @@ The 'remove' script.
 <INLINE>
 removepkg &name;-&version;-x86_64-1
 rm -rf &plugdir;
-rm -rf /usr/local/emhttp/pageNotes.php
 </INLINE>
 </FILE> 
 </PLUGIN>
