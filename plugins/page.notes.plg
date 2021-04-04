@@ -2,8 +2,8 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "page.notes">
 <!ENTITY author    "Andrew Zawadzki">
-<!ENTITY version   "2021.04.03">
-<!ENTITY md5       "035e85a48bf30d9fa8b4156d4366da2d">
+<!ENTITY version   "2021.04.03c">
+<!ENTITY md5       "274934f34e9ba8c36f67dc38fdb451e5">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "Squidly271/page.notes">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/main/plugins/&name;.plg">
