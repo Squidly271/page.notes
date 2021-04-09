@@ -21,7 +21,7 @@ $vars = parse_ini_file("/var/local/emhttp/var.ini");
 <body>
 
 <h2><center>User Notes For <?=$vars['NAME']?> Page <em>"<?=$_GET['page']?>"</em></center></h2>
-<textarea id='UnraidNotes' rows=20 cols=65 placeholder='Enter Notes Here' oninput='$("#saveButton").prop("disabled",false);'></textarea>
+<textarea id='UnraidNotes' style='font-family:Courier New' rows=20 cols=65 placeholder='Enter Notes Here' oninput='$("#saveButton").prop("disabled",false);'></textarea>
 <center>
 <input id='saveButton' type='button' value='SAVE' disabled onclick='saveChanges();'></input>
 <input type='button' value='DONE' onclick='window.close();'></input>
