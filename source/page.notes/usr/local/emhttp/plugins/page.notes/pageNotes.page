@@ -14,7 +14,7 @@ $currentUnraidPage = basename($URI);
 $fileExists = is_file("/boot/config/plugins/page.notes/pages/$currentUnraidPage");
 ?>
 <style>
-.pageNotes{color:red;}
+.pageNotes{color:red !important;}
 </style>
 <script>
 $(function() {
@@ -25,7 +25,11 @@ $(function() {
 
 <? if ( $fileExists ):?>
 	setInterval(function() {
-		$("i.fa.fa-edit.system").toggleClass("pageNotes");
+		<? if ($theme == "azure" || $theme == "gray"):?>
+			$("i.fa.fa-edit.system").parent().toggleClass("pageNotes");
+		<? else: ?>
+			$("i.fa.fa-edit.system").toggleClass("pageNotes");
+		<?endif;?>
 	},750);
 <?endif;?>
 

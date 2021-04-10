@@ -2,8 +2,8 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "page.notes">
 <!ENTITY author    "Andrew Zawadzki">
-<!ENTITY version   "2021.04.09">
-<!ENTITY md5       "6b30470fcd1eddf6d89661936e81431d">
+<!ENTITY version   "2021.04.10">
+<!ENTITY md5       "c5f7a04325029271ab66e8654788413f">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "Squidly271/page.notes">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/main/plugins/&name;.plg">
@@ -12,6 +12,9 @@
 <PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" icon="edit">
 
 <CHANGES>
+###2021.04.10
+- Support flashing on Azure / Gray
+
 ###2021.04.09
 - Switch to monospaced font
 
