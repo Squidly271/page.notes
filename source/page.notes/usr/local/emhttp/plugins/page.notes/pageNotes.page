@@ -43,6 +43,6 @@ function pageNotes() {
 function popupWindow(url, windowName, w, h) {
 	var y = window.outerHeight / 2 + window.screenY - ( h / 2);
 	var x = window.outerWidth / 2 + window.screenX - ( w / 2);
-	return window.open(url, windowName, `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=${w}, height=${h}, top=${y}, left=${x}`);
+	return window.open(url, windowName, `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=yes, copyhistory=no, width=${w}, height=${h}, top=${y}, left=${x}`);
 }
 </script>
