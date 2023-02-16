@@ -1,7 +1,7 @@
 <?
 ###################################
 #     Page Notes (User Notes)     #
-# Copyright 2021, Andrew Zawadzki #
+# Copyright 2023, Andrew Zawadzki #
 ###################################
 $pageEditing = $_GET['page'];
 $vars = parse_ini_file("/var/local/emhttp/var.ini");

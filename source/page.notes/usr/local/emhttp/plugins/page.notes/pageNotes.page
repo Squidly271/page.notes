@@ -6,7 +6,7 @@ Code="f044"
 <?
 ###################################
 #     Page Notes (User Notes)     #
-# Copyright 2021, Andrew Zawadzki #
+# Copyright 2023, Andrew Zawadzki #
 ###################################
 $URI = str_replace("?","/",$_SERVER['REQUEST_URI']);
 
@@ -29,6 +29,7 @@ $(function() {
 			$("i.fa.fa-edit.system").parent().toggleClass("pageNotes");
 		<? else: ?>
 			$("i.fa.fa-edit.system").toggleClass("pageNotes");
+			$("b.fa.fa-edit.system").toggleClass("pageNotes");
 		<?endif;?>
 	},750);
 <?endif;?>
