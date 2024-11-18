@@ -1,8 +1,8 @@
 <?PHP
-###################################
-#     Page Notes (User Notes)     #
-# Copyright 2023, Andrew Zawadzki #
-###################################
+########################################
+#        Page Notes (User Notes)       #
+# Copyright 2023-2024, Andrew Zawadzki #
+########################################
 exec("mkdir -p /boot/config/plugins/page.notes/pages");
 switch ($_POST['action']) {
 	case "read":

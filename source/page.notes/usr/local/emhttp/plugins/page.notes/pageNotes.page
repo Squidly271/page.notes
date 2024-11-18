@@ -4,11 +4,11 @@ Icon="edit"
 Code="f044"
 ---
 <?
-###################################
-#     Page Notes (User Notes)     #
-# Copyright 2023, Andrew Zawadzki #
-###################################
-$URI = str_replace("?","/",$_SERVER['REQUEST_URI']);
+########################################
+#        Page Notes (User Notes)       #
+# Copyright 2023-2024, Andrew Zawadzki #
+########################################
+$URI = strip_tags(str_replace("?","/",html_entity_decode($_SERVER['REQUEST_URI'])));
 
 $currentUnraidPage = basename($URI);
 $fileExists = is_file("/boot/config/plugins/page.notes/pages/$currentUnraidPage");
