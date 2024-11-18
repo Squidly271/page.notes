@@ -3,7 +3,7 @@
 <!ENTITY name      "page.notes">
 <!ENTITY author    "Andrew Zawadzki">
 <!ENTITY version   "2024.11.18">
-<!ENTITY md5       "0909b39c5e312f622c82764aa46e4a36">
+<!ENTITY md5       "b8c930887bc17397582258bccc07f63d">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "Squidly271/page.notes">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/main/plugins/&name;.plg">
